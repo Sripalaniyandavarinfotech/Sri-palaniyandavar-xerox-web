@@ -5,7 +5,7 @@ import Logo from "./Logo";
 export default function FloatingButtons() {
   return (
     <div className="mobile-bar">
-      <a href={PRIMARY_TEL} className="btn btn-maroon">Call</a>
+      <a href={PRIMARY_TEL} className="btn btn-primary">Call</a>
       <a href={SITE.whatsapp} target="_blank" rel="noopener" className="btn btn-whatsapp"><Logo name="whatsapp" /> WhatsApp</a>
       <a href={SITE.mapsUrl} target="_blank" rel="noopener" className="btn btn-plain"><Logo name="google-maps" /> Directions</a>
     </div>

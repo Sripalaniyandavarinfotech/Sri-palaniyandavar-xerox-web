@@ -47,7 +47,7 @@ export default function Contact() {
               </li>
             </ul>
             <SocialLinks className="social-on-dark" />
-            <a className="btn btn-turmeric" href={SITE.mapsUrl} target="_blank" rel="noopener">
+            <a className="btn btn-primary" href={SITE.mapsUrl} target="_blank" rel="noopener">
               <Logo name="google-maps" /> Open in Google Maps
             </a>
           </div>

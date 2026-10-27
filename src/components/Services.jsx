@@ -2,11 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { GROUPS, SERVICES } from "../data/services";
 import { PRIMARY_TEL } from "../data/site";
 import Logo from "./Logo";
+import ServiceIcon from "./ServiceIcon";
 
 const FILTERS = [{ id: "all", short: "All services", ta: "அனைத்தும்" }, ...GROUPS];
 
-// The catalog has logos for only a few services. The rest show the first
-// letter of their Tamil name in the group colour instead of an icon.
+// UPI shows the real payment app logos from the Dashboard Icons catalog. The
+// other services use drawn line icons, with the first Tamil letter as a fallback.
 const firstLetter = (text) => {
   const seg = new Intl.Segmenter("ta", { granularity: "grapheme" }).segment(text)[Symbol.iterator]().next();
   return seg.value?.segment ?? text[0];
@@ -19,6 +20,9 @@ function ServiceMark({ service }) {
         {service.logos.map((name) => <Logo key={name} name={name} size={30} />)}
       </span>
     );
+  }
+  if (service.icon) {
+    return <span className="tile-icon" aria-hidden="true"><ServiceIcon name={service.icon} /></span>;
   }
   return <span className="tile-icon" lang="ta" aria-hidden="true">{firstLetter(service.ta)}</span>;
 }
@@ -53,7 +57,7 @@ function ServiceDialog({ service, onClose }) {
         <p>{intro}</p>
         <ul>{items.map((item) => <li key={item}>{item}</li>)}</ul>
         <p className="dialog-note">{note}</p>
-        <a href={PRIMARY_TEL} className="btn btn-maroon">Call to check documents</a>
+        <a href={PRIMARY_TEL} className="btn btn-primary">Call to check documents</a>
       </div>
     </dialog>
   );

@@ -62,7 +62,7 @@ export default function Enquiry() {
               {status === "error" && (
                 <p className="enquiry-error full" role="alert">The message didn't go through. Check your connection and try again, or call us instead.</p>
               )}
-              <button type="submit" className="btn btn-maroon full" disabled={status === "sending"}>
+              <button type="submit" className="btn btn-primary full" disabled={status === "sending"}>
                 {status === "sending" ? "Sending…" : "Send message"}
               </button>
             </form>

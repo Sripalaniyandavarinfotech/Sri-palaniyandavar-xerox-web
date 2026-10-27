@@ -9,6 +9,7 @@ export const GROUPS = [
 export const SERVICES = [
   {
     id: "aadhaar",
+    icon: "fingerprint",
     featured: true,
     ta: "ஆதார் சேவைகள்",
     cats: ["gov"],
@@ -27,6 +28,7 @@ export const SERVICES = [
   },
   {
     id: "esevai",
+    icon: "certificate",
     featured: true,
     ta: "இ-சேவை மையம்",
     cats: ["gov"],
@@ -44,6 +46,7 @@ export const SERVICES = [
   },
   {
     id: "smartcard",
+    icon: "smartcard",
     ta: "ஸ்மார்ட் கார்டு",
     cats: ["gov"],
     title: "Smart Card Services",
@@ -59,6 +62,7 @@ export const SERVICES = [
   },
   {
     id: "pan",
+    icon: "idcard",
     ta: "பான் கார்டு",
     cats: ["gov"],
     title: "PAN Card & ID Cards",
@@ -69,6 +73,7 @@ export const SERVICES = [
   },
   {
     id: "passport",
+    icon: "passport",
     ta: "பாஸ்போர்ட்",
     cats: ["gov"],
     title: "Passport Assistance",
@@ -79,6 +84,7 @@ export const SERVICES = [
   },
   {
     id: "pf",
+    icon: "rupee",
     ta: "பி.எஃப் பணம் எடுத்தல்",
     cats: ["gov", "pay"],
     title: "PF Withdrawal & EPFO",
@@ -89,7 +95,7 @@ export const SERVICES = [
   },
   {
     id: "xerox",
-    logos: ["printer"],
+    icon: "copier",
     featured: true,
     ta: "ஜெராக்ஸ்",
     cats: ["docs"],
@@ -101,6 +107,7 @@ export const SERVICES = [
   },
   {
     id: "printing",
+    icon: "printer",
     ta: "பிரிண்ட் & ஸ்கேன்",
     cats: ["docs"],
     title: "Printing & Scanning",
@@ -115,6 +122,7 @@ export const SERVICES = [
   },
   {
     id: "online",
+    icon: "form",
     ta: "ஆன்லைன் விண்ணப்பம்",
     cats: ["docs", "gov"],
     title: "Online Applications",
@@ -125,6 +133,7 @@ export const SERVICES = [
   },
   {
     id: "bills",
+    icon: "bulb",
     ta: "மின் கட்டணம் & ரீசார்ஜ்",
     cats: ["pay"],
     title: "Bill Payments & Recharge",
@@ -146,6 +155,7 @@ export const SERVICES = [
   },
   {
     id: "aeps",
+    icon: "bank",
     ta: "ஆதார் வங்கி சேவை",
     cats: ["pay"],
     title: "Aadhaar-Enabled Banking",
@@ -156,6 +166,7 @@ export const SERVICES = [
   },
   {
     id: "fastag",
+    icon: "car",
     ta: "ஃபாஸ்டேக்",
     cats: ["pay", "travel"],
     title: "FASTag Services",
@@ -172,6 +183,7 @@ export const SERVICES = [
   },
   {
     id: "ttd",
+    icon: "temple",
     ta: "திருப்பதி தரிசன முன்பதிவு",
     cats: ["travel"],
     title: "TTD Darshan Booking",
@@ -182,6 +194,7 @@ export const SERVICES = [
   },
   {
     id: "tickets",
+    icon: "train",
     ta: "ரயில் & விமான டிக்கெட்",
     cats: ["travel"],
     title: "Train & Flight Tickets",
