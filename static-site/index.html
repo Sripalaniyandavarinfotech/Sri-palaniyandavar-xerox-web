@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Palaniyandaver Xerox — Palani</title>
+  <meta name="description" content="Sri Palaniyandaver Xerox, Palani — Registered Aadhaar service centre, TNEGA e-Sevai centre, Xerox, printing, PAN, passport, FASTag, bill payments, money transfer, TTD darshan, train and flight booking assistance." />
+  <meta name="theme-color" content="#3b0a45" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%23ff8a00'/><text x='32' y='43' font-size='30' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>SP</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Noto+Sans+Tamil:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-printer">
+      <div class="lp-paper"></div>
+      <div class="lp-body"></div>
+    </div>
+    <p class="loader-text">Sri Palaniyandaver Xerox</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-text">
+          <strong>Sri Palaniyandaver Xerox</strong>
+        </span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+919843666944" class="btn btn-sm btn-primary nav-cta"><i data-lucide="phone"></i> Call Now</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <canvas id="particles" class="particles"></canvas>
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="pill reveal">
+            <span class="dot-live"></span> Registered Aadhaar Centre · TNEGA e-Sevai
+          </div>
+          <h1 class="hero-title reveal" style="--d:.1s">
+            Your One-Stop Centre for
+            <span class="typed-wrap"><span class="typed" id="typed">Xerox &amp; Printing</span><span class="caret"></span></span>
+          </h1>
+          <p class="hero-tamil reveal" style="--d:.2s">ஜெராக்ஸ் · டிஜிட்டல் சேவைகள் · அரசு சேவை உதவி</p>
+          <p class="hero-sub reveal" style="--d:.3s">
+            Photocopying, printing, online applications, government services and digital assistance —
+            all under one roof at Rajendra Road, Palani.
+          </p>
+          <div class="hero-actions reveal" style="--d:.4s">
+            <a href="#services" class="btn btn-primary btn-lg magnetic">Explore Services <i data-lucide="arrow-right"></i></a>
+            <a href="https://maps.app.goo.gl/yVEyBx2Q68CwS9ei7?g_st=ac" target="_blank" rel="noopener" class="btn btn-ghost btn-lg magnetic"><i data-lucide="map-pin"></i> Get Directions</a>
+          </div>
+          <div class="hero-stats reveal" style="--d:.5s">
+            <div class="stat"><strong class="counter" data-target="15" data-suffix="+">0</strong><span>Services</span></div>
+            <div class="stat"><strong class="counter" data-target="5">0</strong><span>Categories</span></div>
+            <div class="stat"><strong class="counter" data-target="2">0</strong><span>Govt. Registrations</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:.3s">
+          <div class="orbit">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="orbit-item" style="--a:0deg"><i data-lucide="fingerprint"></i></div>
+            <div class="orbit-item" style="--a:60deg"><i data-lucide="landmark"></i></div>
+            <div class="orbit-item" style="--a:120deg"><i data-lucide="train-front"></i></div>
+            <div class="orbit-item" style="--a:180deg"><i data-lucide="smartphone"></i></div>
+            <div class="orbit-item" style="--a:240deg"><i data-lucide="car"></i></div>
+            <div class="orbit-item" style="--a:300deg"><i data-lucide="credit-card"></i></div>
+          </div>
+          <div class="printer">
+            <div class="printer-top"></div>
+            <div class="printer-body">
+              <span class="printer-light"></span>
+              <span class="printer-slot"></span>
+            </div>
+            <div class="paper p1"><span></span><span></span><span></span><span></span></div>
+            <div class="paper p2"><span></span><span></span><span></span><span></span></div>
+            <div class="paper p3"><span></span><span></span><span></span><span></span></div>
+            <div class="printer-tray"></div>
+          </div>
+          <div class="float-card fc-1"><i data-lucide="badge-check"></i><div><strong>Aadhaar</strong><small>Address · Mobile · Email</small></div></div>
+          <div class="float-card fc-2"><i data-lucide="file-text"></i><div><strong>e-Sevai</strong><small>TNEGA registered</small></div></div>
+        </div>
+      </div>
+
+      <a href="#marquee" class="scroll-down" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" id="marquee">
+      <div class="marquee-track">
+        <span>Aadhaar Update</span><span>e-Sevai</span><span>Smart Card</span><span>Xerox</span><span>Printing</span><span>Scanning</span><span>PAN Card</span><span>Passport</span><span>TTD Darshan</span><span>Train Tickets</span><span>Flight Tickets</span><span>FASTag</span><span>UPI Transfer</span><span>AePS Banking</span><span>PF Withdrawal</span><span>EB Bill</span><span>Mobile Recharge</span>
+        <span>Aadhaar Update</span><span>e-Sevai</span><span>Smart Card</span><span>Xerox</span><span>Printing</span><span>Scanning</span><span>PAN Card</span><span>Passport</span><span>TTD Darshan</span><span>Train Tickets</span><span>Flight Tickets</span><span>FASTag</span><span>UPI Transfer</span><span>AePS Banking</span><span>PF Withdrawal</span><span>EB Bill</span><span>Mobile Recharge</span>
+      </div>
+    </div>
+
+    <!-- Highlights -->
+    <section class="section highlights">
+      <div class="container highlight-grid">
+        <div class="highlight reveal">
+          <div class="hl-icon"><i data-lucide="fingerprint"></i></div>
+          <h3>Registered Aadhaar Service Centre</h3>
+          <p>Address, mobile number and email updates, plus e-Aadhaar download assistance as per UIDAI rules.</p>
+        </div>
+        <div class="highlight reveal" style="--d:.1s">
+          <div class="hl-icon"><i data-lucide="building-2"></i></div>
+          <h3>TNEGA-Registered e-Sevai Centre</h3>
+          <p>Help with available Tamil Nadu government e-Sevai services and online applications.</p>
+        </div>
+        <div class="highlight reveal" style="--d:.2s">
+          <div class="hl-icon"><i data-lucide="layers"></i></div>
+          <h3>Everything in One Place</h3>
+          <p>Xerox, printing, travel bookings, payments and digital help — no need to visit multiple shops.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What we do</span>
+          <h2>Our <span class="grad-text">Services</span></h2>
+          <p>Tap any service to see the details. Please contact us to confirm availability, documents required and charges before visiting.</p>
+        </div>
+
+        <div class="filters reveal" role="tablist">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="gov">Government</button>
+          <button class="filter" data-filter="docs">Documents</button>
+          <button class="filter" data-filter="pay">Banking &amp; Payments</button>
+          <button class="filter" data-filter="travel">Travel</button>
+          <span class="filter-indicator"></span>
+        </div>
+
+        <div class="service-grid" id="serviceGrid">
+
+          <article class="service-card reveal" data-cat="gov" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="fingerprint"></i></div>
+            <span class="sc-tag">Registered Centre</span>
+            <h3>Aadhaar Services</h3>
+            <p>Address, mobile number and email updates, and e-Aadhaar download.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Sri Palaniyandaver Xerox provides Aadhaar-related services as a registered Aadhaar service centre, within the scope of its current authorization and applicable UIDAI rules.</p>
+              <ul>
+                <li>Aadhaar address update</li>
+                <li>Aadhaar mobile number update</li>
+                <li>Aadhaar email address update</li>
+                <li>e-Aadhaar download assistance</li>
+                <li>Supporting document and application guidance</li>
+              </ul>
+              <p class="note">Please contact the centre before visiting to confirm availability, supporting documents, verification procedures and official fees. Updates are subject to UIDAI requirements and verification.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="gov" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="building-2"></i></div>
+            <span class="sc-tag">TNEGA Registered</span>
+            <h3>e-Sevai Centre</h3>
+            <p>Assistance with available Tamil Nadu government e-Sevai services.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>As a TNEGA-registered e-Sevai centre, we help make online government services more accessible to people who need assistance with digital applications and official procedures.</p>
+              <ul>
+                <li>Assistance with eligible government applications</li>
+                <li>Document preparation</li>
+                <li>Online form submission</li>
+                <li>Other services enabled for the centre</li>
+              </ul>
+              <p class="note">Available services depend on the centre's authorization, the government portal and current rules. Please bring the documents relevant to your service and confirm requirements in advance.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="gov" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="id-card"></i></div>
+            <h3>Smart Card Services</h3>
+            <p>Applications, corrections, updates and related online processes.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>We assist with applicable Smart Card services, including application procedures, corrections, updates and related online processes where authorized and available.</p>
+              <ul>
+                <li>Guidance on the general application process</li>
+                <li>Document preparation</li>
+                <li>Submission requirements</li>
+                <li>Corrections and updates</li>
+              </ul>
+              <p class="note">Availability depends on the type of Smart Card service and the applicable department's rules.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="gov" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="contact"></i></div>
+            <h3>PAN Card &amp; ID Cards</h3>
+            <p>PAN-card assistance and ID-card services.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>PAN-card-related assistance and ID-card services within the scope of the facilities available.</p>
+              <ul>
+                <li>Application procedure guidance</li>
+                <li>Document preparation</li>
+                <li>Printing and related support</li>
+              </ul>
+              <p class="note">Requirements depend on the particular application or card service. Official approvals remain with the relevant authority.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="gov" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="book-user"></i></div>
+            <h3>Passport Assistance</h3>
+            <p>Help with passport online forms and document preparation.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Assistance with passport-related online procedures, including guidance with forms, document preparation and navigating the application process.</p>
+              <ul>
+                <li>Online form guidance</li>
+                <li>Document preparation</li>
+                <li>Help navigating the application process</li>
+              </ul>
+              <p class="note">Applications, appointments and approvals are subject to the official Passport Seva system. Please confirm current procedures and documents before visiting.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="gov pay" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="piggy-bank"></i></div>
+            <h3>PF Withdrawal &amp; EPFO</h3>
+            <p>Claim submission guidance and claim status checks.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Assistance with eligible Provident Fund (PF) withdrawal procedures and related online services.</p>
+              <ul>
+                <li>PF claim submission guidance</li>
+                <li>Checking claim status where available</li>
+                <li>Related EPFO online services</li>
+              </ul>
+              <p class="note">All claims remain subject to EPFO rules, KYC requirements and approval by the relevant authority.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="docs" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="copy"></i></div>
+            <h3>Xerox &amp; Photocopy</h3>
+            <p>Copies of forms, certificates, ID documents and study material.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Photocopying for everyday personal, educational, administrative and business requirements.</p>
+              <ul>
+                <li>Forms and application papers</li>
+                <li>Certificates and identity documents</li>
+                <li>Educational materials</li>
+                <li>Other permitted documents</li>
+              </ul>
+              <p class="note">Useful for students, job applicants, families, office workers and anyone preparing paperwork.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="docs" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="printer"></i></div>
+            <h3>Printing &amp; Scanning</h3>
+            <p>Print online applications and files; scan documents to digital copies.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Document printing and scanning assistance for a range of everyday needs.</p>
+              <ul>
+                <li>Printouts of online applications and receipts</li>
+                <li>Educational documents, certificates, forms and reports</li>
+                <li>Scanning physical documents to digital copies</li>
+              </ul>
+              <p class="note">Please confirm available printing options, file formats and charges with the shop.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="docs gov" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="monitor-smartphone"></i></div>
+            <h3>Online Applications</h3>
+            <p>Help filling online forms, uploading files and printing receipts.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Helpful for people without convenient access to a computer, printer or reliable help with online forms.</p>
+              <ul>
+                <li>Completing online forms</li>
+                <li>Preparing and uploading eligible files</li>
+                <li>Printing application receipts</li>
+                <li>Understanding the next steps</li>
+              </ul>
+              <p class="note">Please provide accurate information and review your application before submission. Sensitive information is handled only when required.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="pay" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="zap"></i></div>
+            <h3>Bill Payments &amp; Recharge</h3>
+            <p>Electricity bills, mobile recharges and other supported payments.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Assistance with available bill-payment and recharge services.</p>
+              <ul>
+                <li>Electricity bill payments</li>
+                <li>Mobile recharges</li>
+                <li>Other supported digital payment facilities</li>
+              </ul>
+              <p class="note">Availability, payment methods and charges depend on supported platforms. Please retain receipts and verify successful transactions.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="pay" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="send"></i></div>
+            <h3>Money Transfer &amp; UPI</h3>
+            <p>Transfers through Google Pay, PhonePe, Paytm and other UPI apps.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Assistance with available money-transfer services, subject to the provider's facilities, verification requirements and regulations.</p>
+              <ul>
+                <li>UPI transfers via Google Pay, PhonePe, Paytm and others</li>
+                <li>Other supported money-transfer services</li>
+              </ul>
+              <p class="note">Please confirm supported transaction types, ID required, limits and charges before starting a transaction. Never share your UPI PIN or OTP.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="pay" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="landmark"></i></div>
+            <h3>Aadhaar-Enabled Banking</h3>
+            <p>Cash withdrawal, balance enquiry and mini statements.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Available Aadhaar-enabled banking services through authorized banking channels, depending on the service provider and customer eligibility.</p>
+              <ul>
+                <li>Aadhaar-enabled cash withdrawals</li>
+                <li>Bank balance enquiries</li>
+                <li>Mini statement requests</li>
+                <li>Other supported Aadhaar-based transactions</li>
+              </ul>
+              <p class="note">Performed only through appropriately authorized channels.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="pay travel" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="car"></i></div>
+            <h3>FASTag Services</h3>
+            <p>New FASTag, recharge, balance checks and account help.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Convenient FASTag-related assistance to help you manage highway toll payments.</p>
+              <ul>
+                <li>FASTag application and registration</li>
+                <li>FASTag recharge</li>
+                <li>Balance and transaction status checks</li>
+                <li>Account-related online procedures</li>
+                <li>Replacement and other eligible services</li>
+              </ul>
+              <p class="note">Subject to the supported provider and applicable requirements.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="travel" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="sparkles"></i></div>
+            <h3>TTD Darshan Booking</h3>
+            <p>Help with official Tirumala Tirupati darshan booking options.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>For devotees planning a visit to Tirumala, we help you navigate the official Tirumala Tirupati Devasthanams (TTD) darshan booking options.</p>
+              <ul>
+                <li>Understanding the official booking process</li>
+                <li>Accessing available booking facilities</li>
+              </ul>
+              <p class="note">Bookings are subject to official availability, eligibility, schedules and TTD rules. A booking is not guaranteed — please verify final details through official TTD channels.</p>
+            </div>
+          </article>
+
+          <article class="service-card reveal" data-cat="travel" tabindex="0">
+            <div class="sc-glow"></div>
+            <div class="sc-icon"><i data-lucide="plane"></i></div>
+            <h3>Train &amp; Flight Tickets</h3>
+            <p>Search journeys, enter passenger details and complete bookings.</p>
+            <span class="sc-more">View details <i data-lucide="arrow-up-right"></i></span>
+            <div class="sc-details">
+              <p>Assistance with train and flight ticket booking through available booking services.</p>
+              <ul>
+                <li>Searching for journeys</li>
+                <li>Entering passenger details</li>
+                <li>Checking available options</li>
+                <li>Completing bookings where supported</li>
+              </ul>
+              <p class="note">Fares, schedules, cancellation terms and availability depend on the booking platform and transport provider. Please verify passenger details, dates and confirmations.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section steps-section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Simple process</span>
+          <h2>How to get <span class="grad-text">your work done</span></h2>
+        </div>
+        <div class="steps">
+          <div class="steps-line"><span></span></div>
+          <div class="step reveal">
+            <div class="step-num">1</div>
+            <h3>Call us first</h3>
+            <p>Confirm the service is available, the documents required and the charges.</p>
+          </div>
+          <div class="step reveal" style="--d:.15s">
+            <div class="step-num">2</div>
+            <h3>Bring your documents</h3>
+            <p>Carry originals and copies relevant to your service.</p>
+          </div>
+          <div class="step reveal" style="--d:.3s">
+            <div class="step-num">3</div>
+            <h3>Get assisted</h3>
+            <p>We help prepare, fill and submit your application or transaction.</p>
+          </div>
+          <div class="step reveal" style="--d:.45s">
+            <div class="step-num">4</div>
+            <h3>Keep your receipt</h3>
+            <p>Review the details and keep your acknowledgement or receipt safe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Who benefits -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow light">Who we serve</span>
+          <h2>Built for <span class="grad-text">everyone in Palani</span></h2>
+          <p>Serving individuals, families, students, pilgrims and local businesses in Palani and surrounding areas.</p>
+        </div>
+        <div class="audience-grid">
+          <div class="audience reveal"><i data-lucide="graduation-cap"></i><h3>Students</h3><p>Photocopies, printouts, scans and application help.</p></div>
+          <div class="audience reveal" style="--d:.08s"><i data-lucide="home"></i><h3>Residents</h3><p>Aadhaar, e-Sevai and Smart Card services.</p></div>
+          <div class="audience reveal" style="--d:.16s"><i data-lucide="users"></i><h3>Families</h3><p>Official applications and supporting documents.</p></div>
+          <div class="audience reveal" style="--d:.24s"><i data-lucide="flame"></i><h3>Pilgrims</h3><p>Official TTD darshan booking assistance.</p></div>
+          <div class="audience reveal" style="--d:.32s"><i data-lucide="briefcase"></i><h3>Job Seekers</h3><p>Forms, certificates and online applications.</p></div>
+          <div class="audience reveal" style="--d:.40s"><i data-lucide="luggage"></i><h3>Travellers</h3><p>Train and flight ticket booking help.</p></div>
+          <div class="audience reveal" style="--d:.48s"><i data-lucide="store"></i><h3>Local Businesses</h3><p>Everyday printing and document services.</p></div>
+          <div class="audience reveal" style="--d:.56s"><i data-lucide="heart-handshake"></i><h3>Seniors</h3><p>Patient help with online forms and payments.</p></div>
+        </div>
+
+        <div class="commitment reveal">
+          <div class="commit-icon"><i data-lucide="award"></i></div>
+          <div>
+            <h3>Our Commitment</h3>
+            <p>To make everyday document and digital service requirements more convenient by bringing multiple services together in one accessible location — with helpful guidance, practical assistance and a friendly experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="cta-band">
+      <div class="container cta-inner reveal">
+        <h2>Have a question about a service?</h2>
+        <p>Call us to confirm availability, documents and charges before you visit.</p>
+        <div class="cta-actions">
+          <a href="tel:+919843666944" class="btn btn-light btn-lg magnetic"><i data-lucide="phone-call"></i> 98436 66944</a>
+          <a href="tel:+917200259009" class="btn btn-outline-light btn-lg magnetic"><i data-lucide="phone-call"></i> 72002 59009</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Visit us</span>
+          <h2>Find <span class="grad-text">Sri Palaniyandaver Xerox</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cards">
+            <a class="contact-card reveal" href="https://maps.app.goo.gl/yVEyBx2Q68CwS9ei7?g_st=ac" target="_blank" rel="noopener">
+              <div class="cc-icon"><i data-lucide="map-pin"></i></div>
+              <div><h3>Address</h3><p>40, PKGR Complex, Rajendra Road,<br />Palani, Tamil Nadu – 624601</p></div>
+            </a>
+            <div class="contact-card reveal" style="--d:.1s">
+              <div class="cc-icon"><i data-lucide="phone"></i></div>
+              <div><h3>Phone</h3><p><a href="tel:+919843666944">98436 66944</a><br /><a href="tel:+917200259009">72002 59009</a></p></div>
+            </div>
+            <a class="contact-card reveal" style="--d:.2s" href="mailto:vijayxerox02@gmail.com">
+              <div class="cc-icon"><i data-lucide="mail"></i></div>
+              <div><h3>Email</h3><p>vijayxerox02@gmail.com</p></div>
+            </a>
+          </div>
+          <div class="map-wrap reveal" style="--d:.15s">
+            <iframe
+              title="Sri Palaniyandaver Xerox location"
+              src="https://www.google.com/maps?q=PKGR+Complex,+Rajendra+Road,+Palani,+Tamil+Nadu+624601&output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <a class="btn btn-primary map-btn" href="https://maps.app.goo.gl/yVEyBx2Q68CwS9ei7?g_st=ac" target="_blank" rel="noopener"><i data-lucide="navigation"></i> Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enquiry -->
+    <section class="section enquiry" id="enquiry">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Enquiry</span>
+          <h2>Send us <span class="grad-text">a message</span></h2>
+          <p>Leave your details and we'll call you back.</p>
+        </div>
+        <div class="enquiry-card reveal">
+          <form class="enquiry-form" id="enquiryForm" action="https://formsubmit.co/vijayxerox02@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New enquiry from website" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Phone No</span>
+              <input type="tel" name="phone" required autocomplete="tel" inputmode="tel"
+                pattern="[0-9+\s\-]{10,15}" title="Enter a valid phone number" placeholder="10-digit mobile number" />
+            </label>
+            <label class="full">
+              <span>Message</span>
+              <textarea name="message" rows="5" required placeholder="How can we help you?"></textarea>
+            </label>
+            <p class="enquiry-error full" role="alert" hidden>Sorry, the message could not be sent. Please try again or call us.</p>
+            <button type="submit" class="btn btn-primary full"><i data-lucide="send"></i> <span>Send Enquiry</span></button>
+          </form>
+          <div class="enquiry-done" role="status" hidden>
+            <i data-lucide="check-circle-2"></i>
+            <h3>Thank you!</h3>
+            <p>Your enquiry has been sent. We'll get back to you soon.</p>
+            <button type="button" class="btn btn-primary" id="enquiryAgain">Send another</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-card">
+        <div class="footer-grid">
+          <div>
+            <a href="#home" class="brand">
+              <span class="brand-text"><strong>Sri Palaniyandaver Xerox</strong></span>
+            </a>
+            <p class="footer-about">Your convenient local destination for document services, digital assistance and eligible government service support in Palani.</p>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>40, PKGR Complex, Rajendra Road, Palani – 624601</p>
+            <a href="tel:+919843666944">98436 66944</a>
+            <a href="tel:+917200259009">72002 59009</a>
+            <a href="mailto:vijayxerox02@gmail.com">vijayxerox02@gmail.com</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Service availability, official approvals, processing times and charges depend on the relevant authorities, service providers and applicable rules.</p>
+          <p>© <span id="year"></span> Sri Palaniyandaver Xerox.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating buttons -->
+  <a href="tel:+919843666944" class="fab-call" aria-label="Call Sri Palaniyandaver Xerox"><i data-lucide="phone"></i></a>
+  <button class="back-top" id="backTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+  <!-- Service modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close aria-label="Close"><i data-lucide="x"></i></button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+      <div class="modal-actions">
+        <a href="tel:+919843666944" class="btn btn-primary"><i data-lucide="phone"></i> Call to confirm</a>
+        <a href="https://maps.app.goo.gl/yVEyBx2Q68CwS9ei7?g_st=ac" target="_blank" rel="noopener" class="btn btn-ghost-dark"><i data-lucide="map-pin"></i> Directions</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
