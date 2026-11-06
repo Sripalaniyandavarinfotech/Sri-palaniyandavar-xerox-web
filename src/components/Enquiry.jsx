@@ -4,11 +4,14 @@ import { ENQUIRY_ENDPOINT } from "../data/site";
 export default function Enquiry() {
   // idle | sending | sent | error
   const [status, setStatus] = useState("idle");
+  // FormSubmit's own explanation when a send fails (for example, the form still needs activating).
+  const [errorText, setErrorText] = useState("");
 
   const onSubmit = async (e) => {
     e.preventDefault();
     const form = e.currentTarget;
     setStatus("sending");
+    setErrorText("");
     try {
       const res = await fetch(ENQUIRY_ENDPOINT, {
         method: "POST",
@@ -19,7 +22,8 @@ export default function Enquiry() {
       if (!res.ok || String(data.success) === "false") throw new Error(data.message);
       form.reset();
       setStatus("sent");
-    } catch {
+    } catch (err) {
+      setErrorText(err?.message || "");
       setStatus("error");
     }
   };
@@ -60,7 +64,10 @@ export default function Enquiry() {
                 <textarea name="message" rows={5} required placeholder="How can we help you?" />
               </label>
               {status === "error" && (
-                <p className="enquiry-error full" role="alert">The message didn't go through. Check your connection and try again, or call us instead.</p>
+                <p className="enquiry-error full" role="alert">
+                  The message didn't go through. {errorText || "Check your connection and try again."} You can also
+                  call or WhatsApp us instead.
+                </p>
               )}
               <button type="submit" className="btn btn-primary full" disabled={status === "sending"}>
                 {status === "sending" ? "Sending…" : "Send message"}

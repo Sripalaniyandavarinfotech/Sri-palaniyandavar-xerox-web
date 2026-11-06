@@ -406,6 +406,34 @@ h3 { font-size: 1.25rem; font-weight: 700; }
 }
 .footer-bottom p:last-child { max-width: 70ch; }
 
+/* ---------- Error pages (404 and crash) ---------- */
+.error-page { min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; background: var(--desk); }
+.error-head {
+  width: min(1160px, 100% - 32px); margin: 12px auto 0; padding: 10px 14px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 14px;
+}
+.error-main {
+  width: min(560px, 100% - 32px); margin: 0 auto; padding: 40px 0 56px;
+  display: grid; justify-items: center; align-content: center; text-align: center;
+}
+.jam-art { width: min(240px, 70vw); height: auto; margin-bottom: 18px; }
+.jam-line { fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.jam-slot { fill: var(--ink); }
+.jam-sheet { fill: #fff; stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; }
+.jam-crease { fill: none; stroke: #9aa6ba; stroke-width: 1.5; stroke-linecap: round; }
+.jam-led { fill: var(--aadhaar); }
+@media (prefers-reduced-motion: no-preference) {
+  .jam-led { animation: jam-blink 1.2s steps(1) infinite; }
+}
+@keyframes jam-blink { 50% { fill: #f4b4bf; } }
+.error-code { font-weight: 700; color: var(--aadhaar); }
+.error-main h1 { font-size: clamp(2rem, 6vw, 2.8rem); font-weight: 800; color: var(--ink); line-height: 1.1; margin-top: 4px; }
+.error-ta { font-weight: 700; color: var(--blue); margin-top: 6px; }
+.error-text { margin-top: 12px; color: var(--muted); max-width: 46ch; }
+.error-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 26px; }
+.error-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px; margin-top: 20px; font-weight: 600; }
+.error-contact a { display: inline-flex; align-items: center; gap: 6px; color: var(--ink); text-underline-offset: 3px; }
+
 /* ---------- Mobile call bar ---------- */
 .mobile-bar { display: none; }
 
