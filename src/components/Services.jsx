@@ -108,6 +108,15 @@ export default function Services() {
           ))}
         </div>
 
+        <a className="needed-callout" href="/needed">
+          <span className="tile-icon" aria-hidden="true"><ServiceIcon name="certificate" /></span>
+          <span>
+            <strong lang="ta">சான்றிதழுக்கு என்ன ஆவணங்கள் தேவை?</strong>
+            <span>Which documents do I need? Community, First Graduate, OBC, Labour Welfare Board and Ration Card checklists.</span>
+          </span>
+          <span className="needed-callout-go" aria-hidden="true">→</span>
+        </a>
+
         <p className="services-warning">
           For payments and banking, never share your UPI PIN or bank OTP with anyone, including our staff.
         </p>

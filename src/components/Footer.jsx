@@ -1,5 +1,6 @@
 import { PRIMARY_TEL, SITE } from "../data/site";
 import { SERVICES } from "../data/services";
+import { NEEDED, neededPath } from "../data/needed";
 import Brand from "./Brand";
 import Logo from "./Logo";
 import SocialLinks from "./SocialLinks";
@@ -31,7 +32,11 @@ export default function Footer() {
           <div>
             <h4>Services</h4>
             <ul className="footer-links">
-              {services.map((s) => <li key={s.id}><a href="#services">{s.title}</a></li>)}
+              {services.map((s) => <li key={s.id}><a href="/#services">{s.title}</a></li>)}
+            </ul>
+            <h4 className="footer-follow"><a href={neededPath()}>Documents needed</a></h4>
+            <ul className="footer-links">
+              {NEEDED.map((n) => <li key={n.slug}><a href={neededPath(n.slug)}>{n.en}</a></li>)}
             </ul>
           </div>
 

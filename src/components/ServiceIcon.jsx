@@ -123,6 +123,40 @@ const ICONS = {
     "M9 17l-2 4",
     "M15 17l2 4",
   ],
+  // First graduate: graduation cap
+  graduate: [
+    "M2 9.5 12 5l10 4.5-10 4.5z",
+    "M6 11.3V16c1.6 1.6 3.6 2.4 6 2.4s4.4-.8 6-2.4v-4.7",
+    "M22 9.5V15",
+  ],
+  // Labour welfare board: safety helmet
+  worker: [
+    "M4 16a8 8 0 0 1 16 0",
+    "M3 16h18v2.5H3z",
+    "M10 8.5V5.5h4v3",
+    "M8 16v-4",
+    "M16 16v-4",
+  ],
+  // Renewal: card with a circular arrow
+  renew: [
+    "M19 12a7 7 0 1 1-2.1-5",
+    "M17 3v4h-4",
+    "M9.5 12.5l2 2 3.5-4",
+  ],
+  // New ration card: couple
+  family: [
+    "M8 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
+    "M16 10a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z",
+    "M3.5 19c.5-3.3 2.2-5.5 4.5-5.5s4 2.2 4.5 5.5",
+    "M11.5 19c.5-3.3 2.2-5.5 4.5-5.5s4 2.2 4.5 5.5",
+  ],
+  // Ration card services: grain sack
+  ration: [
+    "M9 3h6l-1.5 3h-3z",
+    "M10.5 6C6.5 8 5 11.5 5 15c0 3.5 2.5 6 7 6s7-2.5 7-6c0-3.5-1.5-7-5.5-9",
+    "M9 14h6",
+    "M10 17h4",
+  ],
 };
 
 export default function ServiceIcon({ name, size = 24, className = "" }) {

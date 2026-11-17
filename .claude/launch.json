@@ -11,6 +11,20 @@
       "port": 5173
     },
     {
+      "name": "shop-network",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "vite",
+        "preview",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "4173",
+        "--strictPort"
+      ],
+      "port": 4173
+    },
+    {
       "name": "static-site",
       "runtimeExecutable": "python3",
       "runtimeArgs": [
